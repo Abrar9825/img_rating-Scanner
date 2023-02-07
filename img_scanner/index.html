@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body title="MADE BY ABRAR SHAIKH" onload="up()">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <!-- for a display img link -->
+    <link rel="stylesheet" href="style/style.css">
+
+
+    <!-- for img upload and display -->
+    <div class="container" id="container" >
+        <h1>Upload And Get Rating For Your Image And Emoji Reaction</h1>
+        <hr id="hr">
+        <div class="conta" id="main">
+            <canvas id="canv1">
+            </canvas>
+            <p>
+                Filename:
+                <input type="file" multiple="false" accept="image/*" id=finput onchange="upload()">
+            </p>
+        </div>
+        <!-- for a prgress bar -->
+        <div id="Progress_Status" style="display: none;">
+            <div id="myprogressBar" class="bar">0%</div>
+        </div>
+
+        <div class="mainemoji">
+            <div><img id="x" src="emoji/10.gif" style="display: none;"></div>
+        </div>
+
+    </div>
+
+    <!-- feed Back -->
+    <div class="contfeed" id="feed" style="display: none;">
+        <div class="span">
+            <span><img onclick="givefeed()" src="emoji/feedback (1).gif" alt=""></span>
+            <span><img onclick="givefeed()" src="emoji/feedback (3).gif" alt=""></span>
+            <span><img onclick="givefeed()" src="emoji/feedback (4).gif" alt=""></span>
+            <span><img onclick="givefeed()" src="emoji/feedback (5).gif" alt=""></span>
+            <span><img onclick="givefeed()" src="emoji/feedback (2).gif" alt=""></span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
